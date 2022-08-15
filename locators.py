@@ -2,7 +2,9 @@ from selenium.webdriver.common.by import By
 
 sign_in_button = ".//button[text()='Войти в аккаунт']"
 register_button = ".//a[text()='Зарегистрироваться']"
-input_fields_for_reg = ".//input"
+login_field_input = ".//label[text()='Имя']/following::input[1]"
+email_field_input = ".//label[text()='Email']/following::input[1]"
+password_field_input = ".//label[text()='Пароль']/following::input[1]"
 submit_register_button = ".//button[text()='Зарегистрироваться']"
 log_in_button = "[class='button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_medium__3zxIa']"
 personal_account_button = ".//p[@class='AppHeader_header__linkText__3q_va ml-2' and text()='Личный Кабинет']"
@@ -23,3 +25,5 @@ sauses_section_in_constructor = ".//span[text()='Соусы']/parent::div"
 cards_with_sauses = ".//ul[@class='BurgerIngredients_ingredients__list__2A-mT']//p[contains(text(),'Соус')]"
 fillings_section_in_constructor = ".//span[text()='Начинки']/parent::div"
 cards_with_fillings = ".//h2[text()='Начинки']"
+
+
